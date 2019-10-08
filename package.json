@@ -4,6 +4,7 @@
   "description": "example for node",
   "main": "app.js",
   "scripts": {
+      "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,7 +17,7 @@
     "url": "https://github.com/joshlopezz/nodedemo/issues"
   },
   "homepage": "https://github.com/joshlopezz/nodedemo#readme",
-  "dependencies": {
-    "express": "^4.17.1"
+  "engines": {
+    "node": "10.x"
   }
 }
