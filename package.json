@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/joshlopezz/nodedemo.git"
   },
-  "author": "",
+  "author": "joshua lopez-zamudio",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/joshlopezz/nodedemo/issues"
@@ -21,7 +21,7 @@
     "node": "10.x"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.17.2",
     "ejs": "^2.7.1",
     "express": "^4.17.1"
   }
