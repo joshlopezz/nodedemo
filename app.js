@@ -19,10 +19,20 @@ let db = mongoose.connection;
 db.on('error', console.error.bind(console, "MongoDB connection error:"));
 
 
-var task = ["do hw", "workout"];
-var complete = ["finish lab", "do laundry"];
+var task = [];
+var complete = [];
 
 app.get('/', function(req, res){
+    Todo.find(function(err, todo){
+        if(err){
+            console.log(err);
+        }else{
+            task = [];
+            for(i = 0; i<todo.length; i++){
+                task.push(todo[i].item);
+            }
+        }
+    });
     res.render("index", {task:task, complete:complete});
 });
 
